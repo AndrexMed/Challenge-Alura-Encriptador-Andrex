@@ -7,6 +7,10 @@ body{
     font-family: cursive;
     background-color: #98e9d0;
     font-size: 14px;
+    width: 100%;
+}
+.contenedor{
+    display: flex;
 }
 header{
     margin-top: 2%;
@@ -17,30 +21,36 @@ position: relative;
 left: -40px;
 top: -10px;
 }
+.logo{
 
-
+}
 .inText{
-    border: 1px dashed black;
+    border: 1px solid black;
     width: 60%;
     margin-left: 5%;
-    float: left;
     height: auto;
-    display: flex;
+    
     justify-content: center;
     margin-top: 2%;
     padding: 1%;
+    flex-flow: column wrap;
 }
 #area{
-    width: 80%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 250px;
+    height: 250px;
+    background: rgb(255, 255, 255, 20%);
+    margin-top: 1%;
+    resize: none;
 }
 .outText{
     border: 1px solid black;
-    width: 20%;
+    width: 25%;
     margin-right: 5%;
-    margin-left: 10%;
-    float: left;
+    margin-left: 5%;
     height: 100%;
-    background: white;
+    background: rgb(255, 255, 255,25%);
     border-radius: 20px;
     display: flex;
     flex-flow: column;
@@ -48,17 +58,21 @@ top: -10px;
 }
 #area1{
     width: 100%;
+    max-width: 100%;
+    max-height: 250px;
+    display: none;
 }
 .outText img{
     width: 100%;
 }
-.clear{
-    clear: both;
+.notfound{
+    text-align: center;
+    font-size: 16px;
 }
-
 .botones{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    margin-top: 5%;
     flex-flow: wrap;
 }
 .btn1{
@@ -70,9 +84,10 @@ top: -10px;
     text-decoration: none;
     display: inline-block;
     font-size: 24px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 2px solid black;
-    width: 25%;
+    width: auto;
+    
 }
 .btn2{
     background-color: #008CBA;
@@ -83,9 +98,9 @@ top: -10px;
     text-decoration: none;
     display: inline-block;
     font-size: 24px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 2px solid black;
-    width: 25%;
+    width: auto;
 }
 .btn3{
     margin-top: 2%;
@@ -97,9 +112,21 @@ top: -10px;
     text-decoration: none;
     display: inline-block;
     font-size: 24px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 2px solid black;
     width: 100%
+}
+.btn1:active{
+    box-shadow: 2px 2px 5px #fc894d;
+    transform: scale(1.01);
+}
+.btn2:active{
+    box-shadow: 2px 2px 5px #fc894d;
+    transform: scale(1.01);
+}
+.btn3:active{
+    box-shadow: 2px 2px 5px #fc894d;
+    transform: scale(1.01);
 }
 footer{
     background: lightgray;
@@ -107,3 +134,19 @@ footer{
     border-radius: 20px;
     height: auto;
     }
+    @media only screen and (max-width: 600px) {
+        body {
+          background-color: lightblue;
+        }
+        .contenedor{
+            flex-direction: column;
+            align-items: center;
+        }
+        .outText{
+            width: 50%;
+            margin-top: 2%;
+        }
+        header .titulo{
+        display: none;
+        }
+      }
