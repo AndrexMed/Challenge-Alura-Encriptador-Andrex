@@ -25,24 +25,26 @@
             </ul>
         </div>
         <form action="">
-        <textarea autofocus placeholder="Empiece a escribir el texto a cifrar" name="" id="area" cols="30" rows="10"></textarea>
+        <textarea autofocus placeholder="Empiece a escribir el texto a cifrar" name="area" id="area" cols="30" rows="10"></textarea>
     </form>
         <section class="botones">
-            <button type="button" onclick="" class="btn1">Encriptar</button>
-            <button type="button" onclick="" class="btn2">DesEncriptar</button>
+            <input class="btn1" type="button" value="Encriptar">
+            <input class="btn2" type="button" value="Desencriptar">
         </section>
     </section>
     <aside class="outText">
-        <img src="/img/Muñeco.svg" alt="">
-        <textarea name="" id="area1" cols="30" rows="10"></textarea>
-        <p class="notfound"><strong>Ningún mensaje fue encontrado</strong></p>
-        <p class="ingresa">Ingresa el texto que desees encriptar o desencriptar.</p>
-        <button type="button" onclick="" class="btn3">Copiar Texto</button>
+        <img id="muneco" src="/img/Muñeco.svg" alt="">
+        <label id="encriptado" for="area1">Texto Encriptado</label>
+        <textarea name="area1" id="area1" cols="30" rows="10"></textarea>
+        <p id="notfound"><strong>Ningún mensaje fue encontrado</strong></p>
+        <p id="ingresa">Ingresa el texto que desees encriptar o desencriptar.</p>
+        <input id="btn3" type="button" value="Copiar">
     </aside>
 </main>
     <footer>
         <h2>Autor: Giovanni Andres Alzate Agudelo</h2>
         <h2></h2>
     </footer>
+    <script src="/js/encoder.js"></script>
 </body>
 </html>
