@@ -9,6 +9,10 @@ function encriptar(){
     document.getElementById("btn3").style.display = "show";
     document.getElementById("btn3").style.display = "inherit";
     document.getElementById("area1").innerHTML = textocifrado;
+    document.getElementById("area1").style.display="show";
+    document.getElementById("area1").style.display="inherit";
+    document.getElementById("encriptado").style.display="show";
+    document.getElementById("encriptado").style.display="inherit";
 }
 var boton1 = document.querySelector(".btn1"); boton1.onclick = encriptar; // Llamado al boton
 
@@ -23,6 +27,10 @@ function desencriptar(){
     document.getElementById("btn3").style.display = "show";
     document.getElementById("btn3").style.display = "inherit";
     document.getElementById("area1").innerHTML = textocifrado;
+    document.getElementById("area1").style.display="show";
+    document.getElementById("area1").style.display="inherit";
+    document.getElementById("encriptado").style.display="show";
+    document.getElementById("encriptado").style.display="inherit";
 }
 var boton2 = document.querySelector(".btn2"); boton2.onclick = desencriptar;
 
@@ -31,6 +39,6 @@ function copiar(){
 var copy = document.querySelector("#area1");
 copy.select();
 document.execCommand("copy");
-alert("Se copio el texto");
+
 }
 var boton3 = document.querySelector("#btn3"); boton3.onclick = copiar;
