@@ -28,10 +28,8 @@ top: -10px;
     margin-left: 5%;
     height: auto;
     border-radius: 20px;
-    justify-content: center;
     margin-top: 2%;
     padding: 1%;
-    flex-flow: column wrap;
 }
 #area{
     width: 100%;
@@ -41,7 +39,7 @@ top: -10px;
     background: rgb(255, 255, 255, 20%);
     margin-top: 1%;
     resize: none;
-    font-size: 20px;
+    font-size: 25px;
 }
 .outText{
     border: 1px solid black;
@@ -51,8 +49,6 @@ top: -10px;
     height: auto;
     background: rgb(255, 255, 255,50%);
     border-radius: 20px;
-    display: flex;
-    flex-flow: column;
     padding: 1%;
 }
 #encriptado{
@@ -62,8 +58,8 @@ top: -10px;
 #area1{
     width: 100%;
     max-width: 100%;
-    height: 370px;
-    max-height: 370px;
+    height: 300px;
+    max-height: 300px;
     display: none;
     resize: none;
     opacity: 25%;
@@ -81,7 +77,7 @@ top: -10px;
     margin-top: 5%;
     flex-flow: wrap;
 }
-.btn1{
+.btn1, .btn2{
     background-color: #008CBA;
     border: none;
     color: white;
@@ -93,20 +89,7 @@ top: -10px;
     border-radius: 10px;
     border: 2px solid black;
     width: auto;
-    
-}
-.btn2{
-    background-color: #008CBA;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 24px;
-    border-radius: 10px;
-    border: 2px solid black;
-    width: auto;
+    cursor: pointer;
 }
 #btn3{
     margin-top: 2%;
@@ -120,18 +103,14 @@ top: -10px;
     font-size: 24px;
     border-radius: 10px;
     border: 2px solid black;
-    width: 100%
-    
+    width: 100%;
+    cursor: pointer;
 }
-.btn1:active{
+.btn1:active,.btn2:active{
     box-shadow: 2px 2px 5px #fc894d;
     transform: scale(1.01);
 }
-.btn2:active{
-    box-shadow: 2px 2px 5px #fc894d;
-    transform: scale(1.01);
-}
-.btn3:active{
+#btn3:active{
     box-shadow: 2px 2px 5px #fc894d;
     transform: scale(1.01);
 }
@@ -141,7 +120,7 @@ footer{
     border-radius: 20px;
     height: auto;
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 720px) {
         body {
           background-color: lightblue;
           font-size: 16px;
@@ -159,10 +138,11 @@ footer{
             margin: 1%;
         }
         .outText{
-            width: 50%;
+            width: 80%;
             margin-top: 2%;
         }
         header .titulo{
-        display: none;
+        font-size: 16px;
+        
         }
       }
