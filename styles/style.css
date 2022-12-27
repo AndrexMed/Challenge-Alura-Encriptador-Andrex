@@ -31,6 +31,9 @@ top: -10px;
     margin-top: 2%;
     padding: 1%;
 }
+.rules ul li{
+    list-style: none;
+}
 #area{
     width: 100%;
     max-width: 100%;
@@ -63,6 +66,7 @@ top: -10px;
     display: none;
     resize: none;
     opacity: 25%;
+    font-size: 25px;
 }
 .outText img{
     width: 100%;
@@ -119,12 +123,25 @@ footer{
     margin: 2%;
     border-radius: 20px;
     height: auto;
+    text-align: center;
     }
+.redes{
+    display: flex;
+    justify-content: center;
+    }
+#github, #linkedln{
+    width: 50px;
+    margin: 5px;
+}
     @media only screen and (max-width: 720px) {
         body {
           background-color: lightblue;
           font-size: 16px;
         }
+        header .titulo{
+            font-size: 16px;
+            
+            }
         .contenedor{
             flex-direction: column;
             align-items: center;
@@ -141,8 +158,8 @@ footer{
             width: 80%;
             margin-top: 2%;
         }
-        header .titulo{
-        font-size: 16px;
-        
+        .redes{
+            display: flex;
+            flex-direction: column;
         }
       }
