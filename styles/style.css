@@ -11,6 +11,7 @@ body{
 }
 .contenedor{
     display: flex;
+    flex-wrap: wrap;
 }
 header{
     margin-top: 2%;
@@ -30,6 +31,7 @@ top: -10px;
     border-radius: 20px;
     margin-top: 2%;
     padding: 1%;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 .rules ul li{
     list-style: none;
@@ -43,6 +45,7 @@ top: -10px;
     margin-top: 1%;
     resize: none;
     font-size: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 .outText{
     border: 1px solid black;
@@ -53,6 +56,7 @@ top: -10px;
     background: rgb(255, 255, 255,50%);
     border-radius: 20px;
     padding: 1%;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 #encriptado{
     text-align: center;
@@ -67,6 +71,7 @@ top: -10px;
     resize: none;
     opacity: 25%;
     font-size: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 .outText img{
     width: 100%;
@@ -124,6 +129,7 @@ footer{
     border-radius: 20px;
     height: auto;
     text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     }
 .redes{
     display: flex;
@@ -152,14 +158,16 @@ footer{
         .botones{
             display: flex;
             flex-direction: column;
-            margin: 1%;
+        }
+        .btn2{
+            margin-top: 1%;
         }
         .outText{
             width: 80%;
             margin-top: 2%;
+            margin-right: 1%;
         }
         .redes{
             display: flex;
-            flex-direction: column;
         }
       }
